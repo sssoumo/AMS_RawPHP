@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="utf-8">
+<title>UI Elements Slider</title>
+<meta name="description" content="Easy admin" />
+<!-- Tell the browser to be responsive to screen width -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- bootstrap & fontawesome -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min..css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- default style for all pages -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/media.css" type="text/css">
+
+<!-- page specific plugin styles -->
+<link rel="stylesheet" href="css/dropzone.css" type="text/css">
+<link rel="stylesheet" href="css/colorpicker.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- BEGIN :: LEFT PANEL -->
+<div class="leftpanel"> 
+  
+  <!--sidemenu-->
+  <div class="nav-side-menu">
+    <nav class="navbar navbar-inverse"> <a class="navbar-brand" href="index.html">EASY ADMIN</a> </nav>
+    <div class="menu-list">
+      <h6 class="menu-header">MAIN NAVIGATION</h6>
+      <ul id="menu-content" class="menu-content">
+        <li><a href="index.html"><i class="fa fa-dashboard fa-lg"></i><span>Dashboard</span></a></li>
+        <li data-toggle="collapse" data-target="#ui-elements"> <a href="#"> <i class="fa fa-desktop fa-lg"></i> <span>UI Elements</span> <span class="pull-right"><i class="fa fa-plus-square"></i></span> </a>
+          <ul class="sub-menu collapse" id="ui-elements">
+            <li><a href="ui-elements-buttons.html"><i class="fa fa-caret-right"></i>Buttons</a></li>
+            <li><a href="ui-elements-tabs-accordions.html"><i class="fa fa-caret-right"></i>Tabs & Accordions</a> </li>
+            <li><a href="ui-elements-typography.html"><i class="fa fa-caret-right"></i>Typography</a></li>
+            <li><a href="ui-elements-icons.html"><i class="fa fa-caret-right"></i>Icons</a></li>
+            <li><a href="ui-elements-panels.html"><i class="fa fa-caret-right"></i>Panels</a></li>
+            <li><a href="ui-elements-slider.html"><i class="fa fa-caret-right"></i>Slider</a></li>
+            <li><a href="ui-elements-modals.html"><i class="fa fa-caret-right"></i>Modals</a></li>
+          </ul>
+        </li>
+        
+        <li data-toggle="collapse" data-target="#layout"> 
+         <a href="#"> <i class="fa fa-columns fa-lg"></i> <span>Layout</span> <span class="pull-right"><i class="fa fa-plus-square"></i></span> </a>
+          <ul class="sub-menu collapse" id="layout">
+            <li><a href="layout-fixed-top.html"><i class="fa fa-caret-right"></i>Fixed Top</a></li>
+            <li><a href="layout-box-layout.html"><i class="fa fa-caret-right"></i>Box Layout</a></li>
+            <li><a href="layout-tiny-sidebar.html"><i class="fa fa-caret-right"></i>Tiny Sidebar</a></li>
+          </ul>
+        </li>
+        <li><a href="widgets.html"><i class="fa fa-th fa-lg"></i><span>Widgets</span></a></li>
+        
+        <li data-toggle="collapse" data-target="#forms">
+        
+			<a class="active" href="#">
+				<i class="fa fa-edit fa-lg"></i>
+				<span>Forms</span>
+				<span class="pull-right"><i class="fa fa-minus-square"></i></span>
+			</a>
+         
+          <ul class="sub-menu collapse in" id="forms">
+            <li><a href="forms.html" class="active"><i class="fa fa-caret-right"></i>General Forms</a></li>
+            <li><a href="form-layouts.html"><i class="fa fa-caret-right"></i>Form Layouts</a></li>
+            <li><a href="form-validation.html"><i class="fa fa-caret-right"></i>Form Validation</a></li>
+            <li><a href="form-wizards.html"><i class="fa fa-caret-right"></i>Form Wizards</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="tables.html"><i class="fa fa-table fa-lg"></i><span>Table</span></a></li>
+        <li><a href="calendar.html"><i class="fa fa-calendar-o fa-lg"></i><span>Calendar</span></a></li>
+        <li data-toggle="collapse" data-target="#email"> <a href="#"><i class="fa fa-envelope-o fa-lg"></i><span>Email</span><span class="pull-right"><i
+                            class="fa fa-plus-square"></i></span></a>
+          <ul class="sub-menu collapse" id="email">
+            <li><a href="email-inbox.html"><i class="fa fa-caret-right"></i>Inbox</a></li>
+            <li><a href="email-compose.html"><i class="fa fa-caret-right"></i>Compose Mail</a></li>
+            <li><a href="email-read.html"><i class="fa fa-caret-right"></i>Read Mail</a></li>
+          </ul>
+        </li>
+        <li data-toggle="collapse" data-target="#payments"> <a href="#"><i class="fa fa-money fa-lg"></i><span>Payments</span><span class="pull-right"><i
+                            class="fa fa-plus-square"></i></span></a>
+          <ul class="sub-menu collapse" id="payments">
+            <li><a href="payments.html"><i class="fa fa-caret-right"></i>Pay</a></li>
+            <li><a href="paymentsettings.html"><i class="fa fa-caret-right"></i>Payment Settings</a></li>
+          </ul>
+        </li>
+        <li><a href="clients.html"><i class="fa fa-address-book-o fa-lg"></i><span>Clients</span></a></li>
+        <li><a href="documents.html"><i class="fa fa-file-text-o fa-lg"></i><span>Documents</span></a></li>
+        <li data-toggle="collapse" data-target="#features"> <a href="#"> <i class="fa fa-folder-o fa-lg"></i> <span>Features</span> <span class="pull-right"><i class="fa fa-plus-square"></i></span> </a>
+          <ul class="sub-menu collapse" id="features">
+            <li><a href="features-profile.html"><i class="fa fa-caret-right"></i>Profile</a></li>
+            <li><a href="features-register.html"><i class="fa fa-caret-right"></i>Register</a></li>
+            <li><a href="features-signin.html"><i class="fa fa-caret-right"></i>Sign In</a></li>
+            <li><a href="features-lockscreen.html"><i class="fa fa-caret-right"></i>Lockscreen</a></li>
+            <li><a href="features-404-error.html"><i class="fa fa-caret-right"></i>404 Error</a></li>
+            <li><a href="features-500-error.html"><i class="fa fa-caret-right"></i>500 Error</a></li>
+            <li><a href="features-blank-page.html"><i class="fa fa-caret-right"></i>Blank Page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="menu-header">UTILITY</h6>
+      <ul class="menu-content">
+        <li><a href="#"><i class="fa fa-adjust text-success"></i>Another Link</a></li>
+        <li><a href="#"><i class="fa fa-adjust text-danger"></i>Another Link</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- End Left Panel --> 
+
+<!-- BEGIN :: MAIN PANEL -->
+<div class="mainpanel"> 
+  
+  <!-- BENGIN :: TOP NAVBAR -->
+  <nav class="navbar navbar-default"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="menutoggle"><i class="fa fa-bars"></i></a> <a class="navbar-brand-img" href="index.html"> <img height="30" src="images/logo.png" alt="CodersWise.com"/> <span class="visible-sm-inline visible-xs-inline">EASY ADMIN</span> </a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="q">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="dropdown-toggle tp-icon" data-toggle="dropdown"> <i class="fa fa-user"></i><span class="badge">2</span> <span class="visible-xs pull-right">All Your Messages</span> </a>
+          <ul class="dropdown-menu">
+            <li class="title">2 Newly Registered Users</li>
+            <li>
+              <ul class="menu">
+                <li> <a href="#">
+                  <div class="pull-left"><img src="images/photos/profile-01.jpeg" class="img-circle" alt=""/></div>
+                  <h4>John Doe <small><i class="fa fa-clock-o"></i> 2 mins</small> </h4>
+                  <p>This is an awesome theme, isn't it?</p>
+                  </a> </li>
+                <li> <a href="#">
+                  <div class="pull-left"><img src="images/photos/profile-02.jpeg" class="img-circle" alt=""/></div>
+                  <h4>Paul Rick <small><i class="fa fa-clock-o"></i> 5 hours</small> </h4>
+                  <p>This is an awesome theme, isn't it?</p>
+                  </a>
+                <li> <a href="#">
+                  <div class="pull-left"><img src="images/photos/profile-03.jpeg" class="img-circle" alt=""/></div>
+                  <h4>Danial Ding <small><i class="fa fa-clock-o"></i> Today</small> </h4>
+                  <p>This is an awesome theme, isn't it?</p>
+                  </a> </li>
+                <li> <a href="#">
+                  <div class="pull-left"><img src="images/photos/profile-04.jpeg" class="img-circle" alt=""/></div>
+                  <h4>Richman Due <small><i class="fa fa-clock-o"></i> Yesterday</small> </h4>
+                  <p>This is an awesome theme, isn't it?</p>
+                  </a> </li>
+                <li> <a href="#">
+                  <div class="pull-left"><img src="images/photos/profile-05.jpeg" class="img-circle" alt=""/></div>
+                  <h4>Eric Hadson <small><i class="fa fa-clock-o"></i> 3 Days</small> </h4>
+                  <p>This is an awesome theme, isn't it?</p>
+                  </a> </li>
+              </ul>
+            </li>
+            <li class="footer"><a href="#">See All Users</a></li>
+          </ul>
+        </li>
+        <li> <a class="dropdown-toggle tp-icon" data-toggle="dropdown"> <i class="fa fa-envelope"></i><span class="badge">10</span> <span class="visible-xs pull-right">Your Current Notification</span> </a>
+          <ul class="dropdown-menu">
+            <li class="title">10 Notification found</li>
+            <li>
+              <ul class="menu">
+                <li> <a href="#"> <i class="fa fa-user text-warning"></i> 100 New visitor today. </a> </li>
+                <li> <a href="#"> <i class="fa fa-key text-danger"></i> Admin password changed. </a>
+                <li> <a href="#"> <i class="fa fa-shopping-cart text-success"></i> 10 new sales today. </a> </li>
+                <li> <a href="#"> <i class="fa fa-gear text-info"></i> Settings has been changed. </a> </li>
+                <li> <a href="#"> <i class="fa fa-calendar text-primary"></i> Your calendar updated. </a> </li>
+                <li> <a href="#"> <i class="fa fa-envelope-o"></i> 5 mail received. </a> </li>
+              </ul>
+            </li>
+            <li class="footer"><a href="#">See All Message</a></li>
+          </ul>
+        </li>
+        <li> <a class="dropdown-toggle tp-icon" data-toggle="dropdown"> <i class="fa fa-globe"></i><span class="badge">2</span> <span class="visible-xs pull-right">Tasks to be completed</span> </a>
+          <ul class="dropdown-menu">
+            <li class="title">10 Notification found</li>
+            <li>
+              <ul class="menu">
+                <li> <a href="#">
+                  <h5>New theme started <small class="pull-right">40%</small> </h5>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-success" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">40% Complete</span> </div>
+                  </div>
+                  </a> </li>
+                <li> <a href="#">
+                  <h5>Sidebar all menu <small class="pull-right">70%</small> </h5>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-danger" style="width: 70%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">40% Complete</span> </div>
+                  </div>
+                  </a>
+                <li> <a href="#">
+                  <h5>Theme modification completed <small class="pull-right">80%</small> </h5>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-warning" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">40% Complete</span> </div>
+                  </div>
+                  </a> </li>
+                <li> <a href="#">
+                  <h5>Update client info <small class="pull-right">20%</small> </h5>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-info" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">40% Complete</span> </div>
+                  </div>
+                  </a> </li>
+                <li> <a href="#">
+                  <h5>Form modification <small class="pull-right">40%</small> </h5>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-striped" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">40% Complete</span> </div>
+                  </div>
+                  </a> </li>
+                <li> <a href="#">
+                  <h5>Finalize the project <small class="pull-right">40%</small> </h5>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-danger" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">40% Complete</span> </div>
+                  </div>
+                  </a> </li>
+              </ul>
+            </li>
+            <li class="footer"><a href="#">See All Notification</a></li>
+          </ul>
+        </li>
+        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img src="images/photos/index.png" alt="">John Doe<span class="caret"></span> </a>
+          <ul class="dropdown-menu dropdown-menu-usermenu">
+            <li><a href="features-profile.html"><i class="fa fa-user"></i> My Profile</a></li>
+            <li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
+            <li><a href="#"><i class="fa fa-question-circle-o"></i> Help</a></li>
+            <li><a href="features-signin.html"><i class="fa fa-sign-out"></i> Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </nav>
+  <!-- End Top Navbar --> 
+  
+  <!-- starting breadcrumb with header-->
+  <section class="pageheader">
+    <h2><i class="fa fa-arrow-right"></i> General Forms <span>subtitle goes here...</span></h2>
+    <div class="breadcrumb-wrapper"> <span class="label label-info">YOU ARE HERE</span>
+      <ol class="breadcrumb">
+        <li><a href="index.html">Easy Admin</a></li>
+        <li>Forms</li>
+        <li class="active">General</li>
+      </ol>
+    </div>
+  </section>
+  <!-- ending breadcrumb--> 
+  
+  <!-- BEGIN :: CONTENT -->
+  <div class="content">
+   <h2>Lot of errors need to fix!!</h2>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Input Fields</h4>
+            <p>Individual form controls automatically receive some global styling. All textual elements with <code>.form-control</code> are set to width: 100%; by default. Wrap labels
+              and controls in <code>.form-group</code> for optimum spacing.</p>
+          </div>
+          <div class="panel-body panel-body-nopadding">
+            <form class="form-horizontal form-bordered">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Default Input</label>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Default Input" class="form-control"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="disabledinput">Disabled Input</label>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Disabled Input" id="disabledinput" class="form-control" disabled=""/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="readonlyinput">Read-Only Input</label>
+                <div class="col-sm-6">
+                  <input type="text" value="Read Only Input" id="readonlyinput" class="form-control" readonly/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Help Text</label>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Help Text" class="form-control">
+                  <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span> </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Input w/ Tooltip</label>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Hover me" title="Tooltip goes here" data-toggle="tooltip" data-trigger="hover" class="form-control tooltips"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Input w/ Popover</label>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="Click Me" class="form-control popovers" data-toggle="popover" data-placement="top" data-original-title="The Title"
+                                               data-content="Content goes here..." data-trigger="click"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Placeholder</label>
+                <div class="col-sm-6">
+                  <input type="text" placeholder="This is a placeholder" class="form-control">
+                </div>
+              </div>
+              <div class="form-group has-success">
+                <label class="col-sm-3 control-label">Input with success</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control form-control-success" id="inputSuccess1">
+                </div>
+              </div>
+              <div class="form-group has-warning">
+                <label class="col-sm-3 control-label" for="inputWarning1">Input with warning</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control form-control-warning" id="inputWarning1">
+                </div>
+              </div>
+              <div class="form-group has-error">
+                <label class="col-sm-3 control-label" for="inputDanger1">Input with danger</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control form-control-errror" id="inputDanger1">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Column Sizing</label>
+                <div class="col-sm-4">
+                  <input type="text" placeholder=".col-sm-4" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" placeholder=".col-sm-3" class="form-control">
+                </div>
+                <div class="col-sm-2">
+                  <input type="text" placeholder=".col-sm-2" class="form-control">
+                </div>
+              </div>
+              
+              <!--             <div class="form-group">
+                                                 <label class="col-sm-3 control-label">Input Sizing</label>--> 
+              <!--              <div class="col-sm-5">-->
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Input Sizing</label>
+                <div class="col-sm-5">
+                  <input type="text" placeholder=".input-sm" class="form-control input-sm mb15">
+                  <input type="text" placeholder="default" class="form-control mb15">
+                  <input type="text" placeholder=".input-lg" class="form-control input-lg">
+                </div>
+              </div>
+              
+              <!--            <div class="form-group">
+                                              <label class="col-sm-3 control-label">Input Tags</label>
+                                              <div class="col-sm-7">
+                                                <input name="tags" id="tags" class="form-control" value="foo,baz" />
+                                              </div>
+                                            </div>-->
+              
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Textarea</label>
+                <div class="col-sm-7">
+                  <textarea class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Autogrow Textarea</label>
+                <div class="col-sm-7">
+                  <textarea id="autoResizeTA" class="form-control" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Radio</label>
+                <div class="col-sm-6">
+                  <div class="radio">
+                    <label>
+                      <input type="radio">
+                      Unchecked</label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" checked="">
+                      Checked</label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" disabled="">
+                      Disabled Unchecked</label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" checked="" disabled="">
+                      Disabled Checked</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="checkbox">Checkbox</label>
+                <div class="col-sm-6">
+                  <div class="checkbox block">
+                    <label>
+                      <input type="checkbox">
+                      Unchecked</label>
+                  </div>
+                  <div class="checkbox block">
+                    <label>
+                      <input type="checkbox" checked="">
+                      Checked</label>
+                  </div>
+                  <div class="checkbox block">
+                    <label>
+                      <input type="checkbox" disabled="">
+                      Disabled Unchecked</label>
+                  </div>
+                  <div class="checkbox block">
+                    <label>
+                      <input type="checkbox" checked="" disabled="">
+                      Disabled Checked</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Spinner</label>
+                <div class="col-sm-9">
+                  <input id="spinner" name="value">
+                  <span class="help-block">Enhance a text input for entering numeric values, with up/down buttons and arrow key handling.</span> </div>
+              </div>
+            </form>
+          </div>
+          <!-- End Content -->
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <button class="btn btn-primary">Submit</button>
+                &nbsp;
+                <button class="btn btn-default">Cancel</button>
+              </div>
+            </div>
+          </div>
+          <!-- panel-footer --> 
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Input Groups</h4>
+            <p>Extend form controls by adding text or buttons before, after, or on both sides of any text-based input. Use <code>.input-group</code> with an <code>.input-group-addon</code> to prepend or append elements to a <code>.form-control</code>.</p>
+          </div>
+          <div class="panel-body ">
+            <form method="get" class="form-horizontal form-bordered">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Basic examples</label>
+                <div class="col-sm-6">
+                  <div class="input-group mb15"> <span class="input-group-addon">@</span>
+                    <input type="text" placeholder="Username" class="form-control"/>
+                  </div>
+                  <div class="input-group mb15">
+                    <input type="text" class="form-control"/>
+                    <span class="input-group-addon">.00</span> </div>
+                  <div class="input-group"> <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control"/>
+                    <span class="input-group-addon">.00</span> </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Sizing</label>
+                <div class="col-sm-6">
+                  <div class="input-group input-group-lg mb15"> <span class="input-group-addon">@</span>
+                    <input type="text" placeholder="Username" class="form-control"/>
+                  </div>
+                  <div class="input-group mb15"> <span class="input-group-addon">@</span>
+                    <input type="text" placeholder="Username" class="form-control"/>
+                  </div>
+                  <div class="input-group input-group-sm"> <span class="input-group-addon">@</span>
+                    <input type="text" placeholder="Username" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Checkbox &amp; Radio</label>
+                <div class="col-sm-6">
+                  <div class="input-group mb15"> <span class="input-group-addon">
+                    <input type="checkbox"/>
+                    </span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                  <div class="input-group"> <span class="input-group-addon">
+                    <input type="radio"/>
+                    </span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Button addons</label>
+                <div class="col-sm-6">
+                  <div class="input-group mb15"> <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">Go!</button>
+                    </span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                  <div class="input-group mb15">
+                    <input type="text" class="form-control"/>
+                    <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">Go!</button>
+                    </span> </div>
+                  <div class="input-group mb15">
+                    <div class="input-group-btn">
+                      <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">Action <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                    <input type="text" class="form-control"/>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="form-control"/>
+                    <div class="input-group-btn">
+                      <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">Action <span class="caret"></span></button>
+                      <ul class="dropdown-menu pull-right">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Segmented buttons</label>
+                <div class="col-sm-6">
+                  <div class="input-group mb15">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1"> <span class="caret"></span> </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                    <input type="text" class="form-control"/>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="form-control"/>
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1"> <span class="caret"></span> </button>
+                      <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- panel-body --> 
+        </div>
+        <!-- panel --> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Select Fields</h4>
+          </div>
+          <div class="panel-body panel-body-nopadding">
+            <form class="form-horizontal form-bordered">
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Select Sizing</label>
+                <div class="col-sm-5">
+                  <select class="form-control input-sm mb15">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                  <select class="form-control mb15">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                  <select class="form-control input-lg">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Example select</label>
+                <div class="col-sm-5">
+                  <select class="form-control mb15">
+                    <option></option>
+                    <option>Bangladesh</option>
+                    <option>Dubai</option>
+                    <option>USA</option>
+                    <option>England</option>
+                    <option>Canada</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Toggle Switches</h4>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-5 control-label">Default Switch</label>
+                <div class="col-sm-7">
+                  <div class="btn-group btn-toggle">
+                    <button class="btn btn-xs btn-default">ON</button>
+                    <button class="btn btn-xs btn-default active">OFF</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 control-label">Primary Switch</label>
+                <div class="col-sm-7">
+                  <div class="btn-group btn-toggle">
+                    <button class="btn btn-xs btn-default">ON</button>
+                    <button class="btn btn-xs btn-primary active">OFF</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 control-label">Success Switch</label>
+                <div class="col-sm-7">
+                  <div class="btn-group btn-toggle">
+                    <button class="btn btn-xs btn-default">ON</button>
+                    <button class="btn btn-xs btn-success active">OFF</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 control-label">Warning Switch</label>
+                <div class="col-sm-7">
+                  <div class="btn-group btn-toggle">
+                    <button class="btn btn-xs btn-default">ON</button>
+                    <button class="btn btn-xs btn-warning active">OFF</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 control-label">Danger Switch</label>
+                <div class="col-sm-7">
+                  <div class="btn-group btn-toggle">
+                    <button class="btn btn-xs btn-default">ON</button>
+                    <button class="btn btn-xs btn-danger active">OFF</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- panel-body --> 
+        </div>
+        <!-- panel --> 
+      </div>
+      <!-- col-md-6 -->
+      
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Enhanced Checkboxes and Radios</h4>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ckbox ckbox-default">
+                  <input type="checkbox" value="1" id="checkboxDefault" checked="checked"/>
+                  <label for="checkboxDefault">Checkbox Default</label>
+                </div>
+                <div class="ckbox ckbox-primary">
+                  <input type="checkbox" value="1" id="checkboxPrimary" checked="checked"/>
+                  <label for="checkboxPrimary">Checkbox Primary</label>
+                </div>
+                <div class="ckbox ckbox-warning">
+                  <input type="checkbox" id="checkboxWarning" checked="checked"/>
+                  <label for="checkboxWarning">Checkbox Warning</label>
+                </div>
+                <div class="ckbox ckbox-success">
+                  <input type="checkbox" id="checkboxSuccess" checked="checked"/>
+                  <label for="checkboxSuccess">Checkbox Success</label>
+                </div>
+                <div class="ckbox ckbox-danger">
+                  <input type="checkbox" id="checkboxDanger" checked="checked"/>
+                  <label for="checkboxDanger">Checkbox Danger</label>
+                </div>
+                <div class="ckbox ckbox-default">
+                  <input type="checkbox" id="checkboxDisabled" disabled="disabled"/>
+                  <label for="checkboxDisabled">Checkbox Disabled</label>
+                </div>
+              </div>
+              <!-- col-md-6 -->
+              
+              <div class="col-md-6">
+                <div class="rdio rdio-default">
+                  <input type="radio" name="radio" id="radioDefault" value="1" checked="checked"/>
+                  <label for="radioDefault">Radio Default</label>
+                </div>
+                <div class="rdio rdio-primary">
+                  <input type="radio" name="radio" value="2" id="radioPrimary"/>
+                  <label for="radioPrimary">Radio Primary</label>
+                </div>
+                <div class="rdio rdio-warning">
+                  <input type="radio" name="radio" value="3" id="radioWarning"/>
+                  <label for="radioWarning">Radio Warning</label>
+                </div>
+                <div class="rdio rdio-success">
+                  <input type="radio" name="radio" value="4" id="radioSuccess"/>
+                  <label for="radioSuccess">Radio Success</label>
+                </div>
+                <div class="rdio rdio-danger">
+                  <input type="radio" name="radio" value="5" id="radioDanger"/>
+                  <label for="radioDanger">Radio Danger</label>
+                </div>
+                <div class="rdio rdio-default">
+                  <input type="radio" name="radio" value="6" disabled="disabled" id="radioDisabled"/>
+                  <label for="radioDisabled">Radio Disabled</label>
+                </div>
+              </div>
+            </div>
+            <!-- row --> 
+          </div>
+          <!-- panel-body --> 
+        </div>
+        <!-- panel --> 
+      </div>
+      <!-- col-md-6 --> 
+      
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Time Picker</h4>
+          </div>
+          <div class="panel-body">
+            <p>Easily select a time for a text input using your mouse or keyboards arrow keys.</p>
+            <br/>
+            <label>Default Time Picker</label>
+            <div class="input-group mb15"> <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+              <div class="bootstrap-timepicker">
+                <input id="timepicker" type="text" class="form-control"/>
+              </div>
+            </div>
+            <label>24 Hour Mode Time Picker</label>
+            <div class="input-group mb15"> <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+              <div class="bootstrap-timepicker">
+                <input id="timepicker2" type="text" class="form-control"/>
+              </div>
+            </div>
+            <label>Specify a step for the minute field</label>
+            <div class="input-group mb15"> <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+              <div class="bootstrap-timepicker">
+                <input id="timepicker3" type="text" class="form-control"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- panel --> 
+      </div>
+      <!-- col-md-6 -->
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Input Masks</h4>
+          </div>
+          <div class="panel-body">
+            <p>Input masks allows a user to more easily enter fixed width input where you would like them to enter the data in a certain format (dates,phones, etc).</p>
+            <br/>
+            <div class="input-group mb15"> <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+              <input type="text" placeholder="Date" id="date" class="form-control"/>
+            </div>
+            <div class="input-group mb20"> <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+              <input type="text" placeholder="Phone" id="phone" class="form-control"/>
+            </div>
+            <div class="input-group mb20"> <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+              <input type="text" placeholder="SSN" id="ssn" class="form-control"/>
+            </div>
+          </div>
+        </div>
+        <!-- panel --> 
+      </div>
+      <!-- col-md-6 --> 
+      
+    </div>
+    <!-- row -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Date Picker</h4>
+          </div>
+          <div class="panel-body">
+            <label>Default Functionality</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+            <br/>
+            <p>Set the <code>numberOfMonths</code> option to an integer of 2 or more to show multiple months in a single datepicker.</p>
+            <br/>
+            <label>Multiple Months</label>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-multiple">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+            <br/>
+            <label>Display Inline</label>
+            <div class="input-group mb15">
+              <div id="datepicker-inline"></div>
+            </div>
+            <p>Display the datepicker embedded in the page instead of in an overlay. Simply call <code>.datepicker()</code> on a <code>div</code> instead of an input.</p>
+          </div>
+          <!-- panel-body --> 
+        </div>
+        <!-- panel --> 
+        
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Color Picker</h4>
+          </div>
+          <div class="panel-body">
+            <p>A simple component to select color in the same way you select color in Adobe Photoshop.</p>
+            <br/>
+            <form role="form">
+              <div class="form-group">
+                <label class="control-label">Color Picker</label>
+                <br/>
+                <input type="text" name="colorpicker" class="form-control colorpicker-input" id="colorpicker"/>
+                <span id="colorSelector" class="colorselector"> <span></span> </span> </div>
+              <br/>
+              <br/>
+              <div class="form-group">
+                <label class="control-label">Color Picker Flat Mode</label>
+                <br/>
+                <input type="text" name="colorpicker" class="form-control colorpicker-input" id="colorpicker3"/>
+                <div class="clearfix"></div>
+                <br/>
+                <span id="colorpickerholder"></span> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-btns"> <a class="minimize"><i class="fa fa-minus"></i></a> <a class="panel-close"><i class="fa fa-times"></i></a> </div>
+            <h4 class="panel-title">Dropzone Multi-File Upload</h4>
+            <p>DropzoneJS is an open source library that provides drag'n'drop file uploads with image previews. <a href="http://dropzonejs.com/"
+                                                                                                                                   target="_blank">http://dropzonejs.com/</a></p>
+          </div>
+          <div class="panel-body">
+            <p>This is just a demo. Uploaded files are <strong>not</strong> stored. This does not handle your file uploads on the server. You have to implement the code to receive and
+              store the file yourself.</p>
+            <br/>
+            <form action="files" class="dropzone">
+              <div class="fallback">
+                <input name="file" type="file" multiple/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Main Panel --> 
+
+<!-- BEGIN :: RIGHT PANEL -->
+<div class="rightpanel"> </div>
+<!-- End Right Panel -->
+
+<footer>
+  <div class="pull-right">Version: 1.0</div>
+  <strong>Copyright © 2014-2017 <a href="http://rfsoftlab.com" target="_blank">RFsoftLab</a></strong>. All rights reserved. </footer>
+<script src="js/jquery-1.12.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/toggles.min.js"></script> 
+<script src="js/jquery.autogrow.js"></script> 
+<script src="js/collapse.js"></script> 
+<script src="js/custom.js"></script> 
+
+<!-- Page specific Javascript--> 
+
+<!--script src="js/jquery.mousewheel.js"></script --> 
+<script src="js/jquery-ui.js"></script> 
+<script src="js/highlight.js"></script> 
+<script src="js/dropzone.js"></script> 
+<script src="js/colorpicker.js"></script> 
+<script>
+    $(document).ready(function () {
+        // Spinner
+        var spinner = $("#spinner").spinner();
+
+        $('.btn-toggle').click(function () {
+            $(this).find('.btn').toggleClass('active');
+
+            if ($(this).find('.btn-primary').size() > 0) {
+                $(this).find('.btn').toggleClass('btn-primary');
+            }
+            if ($(this).find('.btn-danger').size() > 0) {
+                $(this).find('.btn').toggleClass('btn-danger');
+            }
+            if ($(this).find('.btn-success').size() > 0) {
+                $(this).find('.btn').toggleClass('btn-success');
+            }
+            if ($(this).find('.btn-info').size() > 0) {
+                $(this).find('.btn').toggleClass('btn-info');
+            }
+        });
+        jQuery('#datepicker').datepicker();
+
+        jQuery('#datepicker-inline').datepicker();
+
+        jQuery('#datepicker-multiple').datepicker({
+            numberOfMonths: 3,
+            showButtonPanel: true
+        });
+        // Color Picker
+        if (jQuery('#colorpicker').length > 0) {
+            jQuery('#colorSelector').ColorPicker({
+                onShow: function (colpkr) {
+                    jQuery(colpkr).fadeIn(500);
+                    return false;
+                },
+                onHide: function (colpkr) {
+                    jQuery(colpkr).fadeOut(500);
+                    return false;
+                },
+                onChange: function (hsb, hex, rgb) {
+                    jQuery('#colorSelector span').css('backgroundColor', '#' + hex);
+                    jQuery('#colorpicker').val('#' + hex);
+                }
+            });
+        }
+
+        // Color Picker Flat Mode
+        jQuery('#colorpickerholder').ColorPicker({
+            flat: true,
+            onChange: function (hsb, hex, rgb) {
+                jQuery('#colorpicker3').val('#' + hex);
+            }
+        });
+    });
+
+
+</script>
+</body>
+</html>

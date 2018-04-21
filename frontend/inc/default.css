@@ -1,0 +1,421 @@
+/*@import url('font-titilliumweb.css');*/
+/*@import url('font-open-sans.css');*/
+@import url('font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size:18px;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.error{
+    font-family: Open Sans;
+    font-style: italic;
+    font-weight: normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Titillium Web;
+    font-weight: 400;
+}
+
+.navbar{
+    margin-bottom: 0;
+    min-height: 75px;
+    z-index: 999;
+}
+.navbar-brand{
+    padding: 17px 15px;
+    margin-left:0;
+    min-height: 50px;
+}
+
+.navbar-right{
+    margin-right:0;
+}
+h2.logo{
+    margin: 0;
+    font-size: 32px;
+}
+h3.top_link{
+    font-size:18px;
+    font-family: Open sans;
+    margin-top: 28px;
+}
+.title{
+    clear:both;
+    font-size:12px;
+    font-family: Open sans;
+}
+.jumbotron{
+    height:522px;
+    background-repeat: repeat;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1.moto, .sign_up_title{
+    text-align: center;
+}
+p.sub-moto{
+    text-align: center;
+}
+
+
+.top_form{
+    min-height: 160px;
+    padding:35px;
+    border-radius: 6px 6px 6px 6px;
+}
+.top_form input{
+    margin-bottom: 10px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.top_form textarea{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.btn-warning{
+    height:60px;
+}
+.we_mean_easy {
+    padding-top: 20px;
+}
+.fast_and_easy{
+width: 100%;
+}
+.features{
+    text-align:center;
+}
+.features i{
+    font-size:100px;
+}
+.sfeatures i{
+    font-size: 200px;
+    color:#dc4225 ;
+    /*padding-left: 35px;*/
+}
+.scrty{
+    background: url("../inc/img/security-blur-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.security{
+    text-align: center;
+
+
+}
+.security img{
+    padding-left: 50px;
+}
+.security ul{
+    text-align: left;
+
+}
+.padLR30{
+    padding:0;
+}
+.easy p{
+    font-size:18px;
+}
+
+.easy_screen{
+    text-align:right;
+}
+
+.reporting p{
+    font-size:18px;
+}
+.testimonial{
+    text-align:center;
+}
+
+.testimonial p{
+    font-size:18px;
+}
+
+.reporting_screen{
+    text-align:center;
+    padding-top: 40px;
+}
+footer{
+    text-align:center;
+    padding: 10px 0 1px;
+}
+footer p{
+    font-size:14px;
+}
+footer p a{
+    font-size:14px;
+    color:white;
+}
+footer p a:hover{
+    color: #db4225;
+}
+.footer_link{
+    text-align:right;
+}
+
+.footer_link a{
+    padding: 0 6px;
+    font-size: 14px;
+    color: white;
+}
+.footer_link a:hover{
+    color: #db4225;
+}
+.footer_link span{
+    font-size:12px;
+    color: #db4225;
+}
+.section_features{
+    margin-bottom: 40px;
+    margin-top: 0px;
+    width:100%;
+}
+.sign_up{
+    padding-bottom: 30px;
+}
+.security ul{
+    margin-top: 30px;
+}
+
+.pad_tb_125{
+    padding: 10px 0 30px;
+}
+.pad_tb_80{
+    padding: 10px 0 30px;
+}
+
+.info{
+    padding: 30px 0;
+}
+.info h2{
+    color: white;
+}
+.info h3{
+    color: #34D4C5;
+}
+.info a{
+    color: orange;
+}
+.refresh i{
+    padding-left:10px;
+    font-size: 24px;
+}
+a.refresh{
+    text-decoration: none;
+}
+
+/*@media (min-width: 769px){*/
+ /* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    .we_mean_easy {
+        padding-top: 0;
+    }
+    .security ul{
+        margin-top: 0;
+    }
+    .section_features{
+        margin-bottom: 0;
+    }
+
+    .padLR30{
+        padding:0 30px
+    }
+
+    .sign_up{
+        height:490px;
+    }
+
+    h1.moto, .sign_up_title{
+        font-size: 48px;
+        line-height: 67px;
+    }
+    p.sub-moto{
+        font-size: 22px;
+        line-height: 31px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .sign_up_title{
+        font-size:42px;
+        line-height:50px;
+    }
+    .price_plan h2{
+        font-size:42px;
+        line-height:50px;
+        margin:0;
+        padding:80px 0 20px;
+    }
+    .testimonial p{
+        margin:15px 0;
+    }
+    .security{
+        padding-top:30px;
+        overflow-x: auto;
+    }
+    .security li{
+        font-size:20px;
+        line-height:35px;
+    }
+    .pad_tb_115{
+        /*padding:115px 0;*/
+    }	
+    .pad_tb_125{
+        padding:65px 0 0;
+    }
+    .pad_tb_80{
+        padding:80px 0;
+    }
+    .we_mean_easy{
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .detail_reporting{
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .testimonial_users{
+        font-size: 42px;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+    .section_features{
+        margin: 65px 0 75px;
+    }
+    .section_features h2{
+        font-size:36px;
+    }
+
+    .fast_and_easy h2{
+        font-size:42px;
+    }
+    .fast_and_easy .features h3{
+        font-size:30px;
+    }
+    .easy_screen_wrapper{
+       padding: 90px 0;
+        min-height: 467px;
+    }
+    .easy_screen{
+        min-height: 375px;;
+        /*padding-top:93px;*/
+    }
+    .reporting_screen{
+        height: 470px;
+        padding-top:50px;
+        padding-right: 30px;
+    }
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+    .jumbotron {
+        padding-top: 75px;
+    }
+    .sign_up{
+        padding: 75px 50px;
+        margin-top: 0px;
+    }
+    .features{
+        padding:30px 0;
+    }
+    .features h3{
+        font-size:18px;
+    }
+
+}
+
+
+/********************easy***********************/
+
+/*Thumbnail Background*/
+.thumb {
+    width: 400px;
+    height: 300px;
+    perspective: 1000px;
+
+}
+.thumb a {
+    display: block; width: 100%; height: 100%;
+    /*double layered BG for lighting effect*/
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("../inc/img/ess.jpg");
+    /*disabling the translucent black bg on the main image*/
+    background-size: 0, cover;
+    /*3d space for children*/
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+.thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb a:after {
+    /*36px high element positioned at the bottom of the image*/
+    content: ''; position: absolute; left: 0; bottom: 0;
+    width: 100%; height: 36px;
+    /*inherit the main BG*/
+    background: inherit; background-size: cover, cover;
+    /*draw the BG bottom up*/
+    background-position: bottom;
+    /*rotate the surface 90deg on the bottom axis*/
+    transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb a span {
+    color: white; text-transform: uppercase;
+    position: absolute; top: 100%; left: 0; width: 100%;
+    font: bold 12px/36px Montserrat; text-align: center;
+    /*the rotation is a bit less than the bottom surface to avoid flickering*/
+    transform: rotateX(-89.99deg); transform-origin: top;
+    z-index: 1;
+}
+/*shadow*/
+.thumb a:before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    /*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+}
+.thumb:hover a:before {
+    opacity: 1;
+    /*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    /*pushing the shadow down and scaling it down to size*/
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+.btn-oronya {
+    color: #fff;
+    background-color: #dc4225;
+    border-color: #a72f19;
+}
+
+
+.btn-oronya:hover {
+    color: #fff;
+    background-color: #6f1605;
+    border-color: #520f03;
+}
+h2>sup{
+    font-size: 18px;
+    line-height: 22px;
+}

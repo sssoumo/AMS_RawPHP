@@ -1,0 +1,24 @@
+2017-11-17 11:11:28 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 585
+2017-11-17 11:11:01 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 585
+2017-11-17 12:11:21 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 585
+2017-11-17 12:11:36 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 530
+2017-11-20 11:11:20 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-05 10:12:57 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 585
+2017-12-05 10:12:55 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 585
+2017-12-07 10:12:13 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND u.id=ud.ref_user_id' at line 1: 404
+2017-12-11 12:12:38 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-11 12:12:39 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-11 12:12:55 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-11 12:12:02 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-11 12:12:03 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-11 12:12:09 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-15 05:12:38 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1: 404
+2017-12-22 05:12:39 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 585
+2017-12-24 01:12:58 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 758
+2017-12-24 01:12:03 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 585
+2017-12-24 03:12:18 :: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND u.id=ud.ref_user_id' at line 1: 404
+2017-12-27 11:12:08 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 758
+2017-12-28 01:12:36 :: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens: 758
+2018-01-16 10:01:44 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_name' in 'where clause': 857
+2018-01-16 10:01:56 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_name' in 'where clause': 857
+2018-01-16 10:01:12 :: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_name' in 'where clause': 857

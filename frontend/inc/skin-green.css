@@ -1,0 +1,155 @@
+body{
+	background: #F5F5F5;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:#666;
+}
+
+h3.title{
+	color:#666;
+}
+.error{
+	color:#C65E3B;
+}
+.jumbotron{
+	height:542px;
+	background-image:url(../inc/img/openingbg.jpg);
+	background-color: #dc4225;
+	color:#fff;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*.jumbotron:before {*/
+	/*content: '';*/
+	/*position: absolute;*/
+	/*top: 75px;*/
+	/*right: 0;*/
+	/*bottom: 130px;*/
+	/*left: 0;*/
+	/*background-image: linear-gradient(to top left, #002f4b, #dc4225);*/
+	/*opacity: .5;*/
+	/*height:542px;*/
+/*}*/
+
+.jumbotron h2{
+	color:#fff;
+}
+.jumbotron a h3{
+	color:rgba(198, 234, 10, 0.78);
+}
+h1.moto, .sign_up_title{
+	color:#fff;
+}
+p.sub-moto{
+	color:#fff;
+}
+
+.btn-warning:hover{
+	background:#dc4225;
+	border:#dc4225 ;
+}
+.easy{
+	background:#098175;
+	
+	background: -webkit-linear-gradient(to top right, #002f4b, #dc4225);
+	background: -moz-linear-gradient(to top right, #002f4b, #dc4225);
+	background: -o-linear-gradient(to top right, #002f4b, #dc4225);
+	background: -ms-linear-gradient(to top right, #002f4b, #dc4225);
+	background: linear-gradient(to top right, #002f4b, #dc4225);
+}
+
+.easy p{
+	color:#fff;
+}
+
+.reporting{
+	background: #098175;
+
+	background: -webkit-linear-gradient(to top left, #002f4b, #dc4225);
+	background: -moz-linear-gradient(to top left, #002f4b, #dc4225);
+	background: -o-linear-gradient(to top left, #002f4b, #dc4225);
+	background: -ms-linear-gradient(to top left, #002f4b, #dc4225);
+	background: linear-gradient(to top left, #002f4b, #dc4225);
+}
+
+.reporting p{
+	color:#fff;
+}
+.testimonial{
+	background: #2f3131;
+
+	/*background: -webkit-linear-gradient(top, #098175, #364761);*/
+	/*background: -moz-linear-gradient(top, #098175, #364761);*/
+	/*background: -o-linear-gradient(top, #098175, #364761);*/
+	/*background: -ms-linear-gradient(top, #098175, #364761);*/
+	/*background: linear-gradient(top, #098175, #364761);*/
+}
+
+.testimonial p{
+	color:#fff;
+}
+
+.we_mean_easy, .detail_reporting, .testimonial_users{
+	color:#fff;
+}
+footer{
+	background:#2f3131;
+	color:#fff;
+}
+
+.features i{
+	color:#dc4225;
+}
+
+.parallax{
+	/* The image used */
+	background-image: url(img/prlx.jpg);
+
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/***************tracker html***************/
+.tjumbotron{
+	height:400px;
+	background-image:url(../inc/img/bg2.jpg);
+	background-color: #dc4225;
+	color:#fff;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hdrtxt{
+	padding-top: 100px;
+}
+.flticon{
+	padding: 50px;
+}
+.flticon i{
+	font-size: 80px;
+	color: #dc4225;
+	float: left;
+	padding: 10px;
+}
+.hdr{
+	margin-bottom: 50px;
+}
+.flttestimonial{
+	background-color: #dc4225;
+	color:#fff;
+	text-align: center;
+}
+
+
